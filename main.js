@@ -101,7 +101,7 @@ function draw() {
     gl.uniformMatrix4fv(shProgram.iModelViewProjectionMatrix, false, modelViewProjection);
     gl.uniformMatrix4fv(shProgram.iModelNormalMatrix, false, modelNormal);
 
-    gl.uniform3fv(shProgram.iLightPosition, [10 * Math.sin(Date.now() * 0.002), 10 * Math.sin(Date.now() * 0.002) ** 2, 1])
+    gl.uniform3fv(shProgram.iLightPosition, [10 * Math.sin(Date.now() * 0.002), 1, 1])
 
     surface.Draw();
 }
